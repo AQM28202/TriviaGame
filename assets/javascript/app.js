@@ -4,9 +4,8 @@
 // Player clicks submit button
 // HTML is updated to display player's number of correct and incorrect answers 
 
-$(document).ready(function(){
 
     $("#start-button").on("click", function(){
         alert("Working");
       });
-    });
+   
