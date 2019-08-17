@@ -1,10 +1,15 @@
 h1 {
     font-family: 'Cinzel Decorative', cursive;
-    font-size: 30px;
-    color: white;
+font-size: 50px;
+    color: #D3D3D3;
 }
 
 body {
     background-color: black;
   }
   
+P {
+    color: #D3D3D3;
+}
+
+hr { color:whitesmoke}
