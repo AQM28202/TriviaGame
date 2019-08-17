@@ -6,7 +6,7 @@
 
 
     $("#start-button").on("click", function(){
-        alert("Working");
+        $("#splash-page").hide();;
       });
 
 
