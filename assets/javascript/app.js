@@ -9,6 +9,11 @@
 var number = 60;
 var intervalId;
 
+// Vars to house answers and nonanswers
+var rightAnswers = 0;
+var wrongAnswers = 0;
+var noAnswers = 0;
+
 $("#start-button").on("click", function () {
 
   // Hides splash page
