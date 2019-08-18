@@ -8,6 +8,7 @@
     $("#start-button").on("click", function(){
         $("#splash-page").hide();
         $("#questions-display").html("<p>" + questionList[0].question + "</p>");
+        $("#answers-display").html("<input type='radio' name='answers' value='0'>" + "<label>" + questionList[0].answers[0] + "</label>");
       });
     
 
