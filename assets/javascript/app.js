@@ -6,7 +6,7 @@
 
 
 // 
-var number = 10;
+var number = 60;
 var intervalId;
 
 $("#start-button").on("click", function () {
@@ -52,7 +52,7 @@ $("#start-button").on("click", function () {
 
     // Targets submit-button div and displays text
 
-    $("#submit-button").html("<button id='done' class='btn btn-outline-light'>Done</button>");
+    $("#submit-button").html("<button id='done' class='btn btn-outline-light btn-lg btn-block'>Done</button>");
    
 });
 
