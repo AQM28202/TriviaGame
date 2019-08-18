@@ -5,6 +5,10 @@
 // HTML is updated to display player's number of correct and incorrect answers 
 
 
+// 
+var number = 60;
+var intervalId;
+
 $("#start-button").on("click", function () {
 
   // Hides splash page
@@ -12,7 +16,9 @@ $("#start-button").on("click", function () {
 
   // Displays initial timer text
   $("#timer").html("<h3>Time Remaining :60</h3>" + "<br>");
+  run();
 
+  
 
   // Displays questions and answer options
   $("#questions-display").html("<p>" + questionList[0].question + "</p>");
@@ -45,6 +51,35 @@ $("#start-button").on("click", function () {
     "<input type='radio' name='answer6' value='2'>" + "<label>" + questionList[6].answers[2] + "</label><hr>");
 });
 
+function run() {
+
+  clearInterval(intervalId);
+  intervalId = setInterval(decrement, 1000);
+}
+
+
+function decrement() {
+
+  //  Decrease number by one.
+  number--;
+
+  //  Show the number in the #time tag
+  $("#timer").html("<h3>Time Remaining :" + number + "</h3>" + "<br>");
+
+  
+
+  if (number === 0) {
+
+      // Run stop function to stop timer countdown
+      stop();
+  }
+}
+
+function stop() {
+
+  //  Clears intervalId
+  clearInterval(intervalId);
+}
 
 // Array of objects with the questions, multiple choices, and correct answers
 var questionList =
