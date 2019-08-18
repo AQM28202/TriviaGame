@@ -51,7 +51,7 @@ $("#start-button").on("click", function () {
     "<input type='radio' name='answer6' value='2'>" + "<label>" + questionList[6].answers[2] + "</label><hr>");
 // Targets submit-button div and displays text
 
-    $("#submit-button").html("<button id='done' class='btn'>Done</button>");
+    $("#submit-button").html("<button id='done' class='btn btn-outline-light'>Done</button>");
 
 });
 
