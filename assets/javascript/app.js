@@ -34,21 +34,21 @@ $("#start-button").on("click", function () {
     "<input type='radio' name='answer3' value='1'>" + "<label>" + questionList[2].answers[1] + "</label>" +
     "<input type='radio' name='answer3' value='2'>" + "<label>" + questionList[2].answers[2] + "</label><hr>" +
     "<p>" + questionList[3].question + "</p>" +
-    "<input type='radio' name='answer3' value='0'>" + "<label>" + questionList[3].answers[0] + "</label>" +
-    "<input type='radio' name='answer3' value='1'>" + "<label>" + questionList[3].answers[1] + "</label>" +
-    "<input type='radio' name='answer3' value='2'>" + "<label>" + questionList[3].answers[2] + "</label><hr>" +
+    "<input type='radio' name='answer4' value='0'>" + "<label>" + questionList[3].answers[0] + "</label>" +
+    "<input type='radio' name='answer4' value='1'>" + "<label>" + questionList[3].answers[1] + "</label>" +
+    "<input type='radio' name='answer4' value='2'>" + "<label>" + questionList[3].answers[2] + "</label><hr>" +
     "<p>" + questionList[4].question + "</p>" +
-    "<input type='radio' name='answer4' value='0'>" + "<label>" + questionList[4].answers[0] + "</label>" +
-    "<input type='radio' name='answer4' value='1'>" + "<label>" + questionList[4].answers[1] + "</label>" +
-    "<input type='radio' name='answer4' value='2'>" + "<label>" + questionList[4].answers[2] + "</label><hr>" +
+    "<input type='radio' name='answer5' value='0'>" + "<label>" + questionList[4].answers[0] + "</label>" +
+    "<input type='radio' name='answer5' value='1'>" + "<label>" + questionList[4].answers[1] + "</label>" +
+    "<input type='radio' name='answer5' value='2'>" + "<label>" + questionList[4].answers[2] + "</label><hr>" +
     "<p>" + questionList[5].question + "</p>" +
-    "<input type='radio' name='answer5' value='0'>" + "<label>" + questionList[5].answers[0] + "</label>" +
-    "<input type='radio' name='answer5' value='1'>" + "<label>" + questionList[5].answers[1] + "</label>" +
-    "<input type='radio' name='answer5' value='2'>" + "<label>" + questionList[5].answers[2] + "</label><hr>" +
+    "<input type='radio' name='answer6' value='0'>" + "<label>" + questionList[5].answers[0] + "</label>" +
+    "<input type='radio' name='answer6' value='1'>" + "<label>" + questionList[5].answers[1] + "</label>" +
+    "<input type='radio' name='answer6' value='2'>" + "<label>" + questionList[5].answers[2] + "</label><hr>" +
     "<p>" + questionList[6].question + "</p>" +
-    "<input type='radio' name='answer6' value='0'>" + "<label>" + questionList[6].answers[0] + "</label>" +
-    "<input type='radio' name='answer6' value='1'>" + "<label>" + questionList[6].answers[1] + "</label>" +
-    "<input type='radio' name='answer6' value='2'>" + "<label>" + questionList[6].answers[2] + "</label><hr>");
+    "<input type='radio' name='answer7' value='0'>" + "<label>" + questionList[6].answers[0] + "</label>" +
+    "<input type='radio' name='answer7' value='1'>" + "<label>" + questionList[6].answers[1] + "</label>" +
+    "<input type='radio' name='answer7' value='2'>" + "<label>" + questionList[6].answers[2] + "</label><hr>");
 
     // Targets submit-button div and displays text
 
@@ -68,7 +68,21 @@ $("#submit-button").on("click", function() {
 function tallyScore() {
   
   var userAnswer1 = $("input[name='answer1']:checked").val();
+  var userAnswer2 = $("input[name='answer2']:checked").val();
+  var userAnswer3 = $("input[name='answer3']:checked").val();
+  var userAnswer4 = $("input[name='answer4']:checked").val();
+  var userAnswer5 = $("input[name='answer5']:checked").val();
+  var userAnswer6 = $("input[name='answer6']:checked").val();
+  var userAnswer7 = $("input[name='answer7']:checked").val();
+  
   alert(userAnswer1);
+  alert(userAnswer2);
+  alert(userAnswer3);
+  alert(userAnswer4);
+  alert(userAnswer5);
+  alert(userAnswer6);
+  alert(userAnswer7);
+
 
 }
 
