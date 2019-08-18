@@ -11,7 +11,8 @@ $("#start-button").on("click", function () {
   $("#splash-page").hide();
 
   // Displays initial timer text
-  $("#timer").html("<h1>Time Remaining: 00:60</h1>" + "<br>");
+  $("#timer").html("<h3>Time Remaining :60</h3>" + "<br>");
+
 
   // Displays questions and answer options
   $("#questions-display").html("<p>" + questionList[0].question + "</p>");

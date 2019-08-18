@@ -4,6 +4,13 @@ font-size: 50px;
     color: #D3D3D3;
 }
 
+h3 {
+    font-family: 'Cinzel Decorative', cursive;
+font-size: 25px;
+    color: #D3D3D3;
+    text-align: right;
+}
+
 body {
     background-color: black;
   }
