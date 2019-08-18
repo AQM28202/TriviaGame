@@ -86,27 +86,127 @@ function tallyScore() {
    if (userAnswer1 === undefined) {
 
     noAnswers++;
-    alert(noAnswers);
+    
 }
 else if (userAnswer1 == 1) {
 
     rightAnswers++;
-    alert("Correct!");
-    alert(questionList[0].answers[1]);
-    alert(rightAnswers);
+    
 }
 else {
 
     wrongAnswers++;
-    alert("Wrong!");
-    alert(userAnswer1);
-    alert(wrongAnswers);
-
+    
 
 }
 
+// Question 2
+if (userAnswer2 === undefined) {
+
+  noAnswers++;
+  
+}
+else if (userAnswer2 == 0) {
+
+  rightAnswers++;
+  
+}
+else {
+
+  wrongAnswers++;
+  
+  
 
 
+}
+// Question 3
+if (userAnswer3 === undefined) {
+
+  noAnswers++;
+}
+else if (userAnswer3 == 2) {
+
+  rightAnswers++;
+  
+}
+else {
+
+  wrongAnswers++;
+  
+
+
+}
+// Question 4
+if (userAnswer4 === undefined) {
+
+  noAnswers++;
+}
+else if (userAnswer4 == 1) {
+
+  rightAnswers++;
+  
+}
+else {
+
+  wrongAnswers++;
+  
+
+
+}
+// Question 5
+if (userAnswer5 === undefined) {
+
+  noAnswers++;
+}
+else if (userAnswer5 == 2) {
+
+  rightAnswers++;
+  
+}
+else {
+
+  wrongAnswers++;
+  
+
+
+}
+// Question 6
+if (userAnswer6 === undefined) {
+
+  noAnswers++;
+}
+else if (userAnswer6 == 0) {
+
+  rightAnswers++;
+  
+}
+else {
+
+  wrongAnswers++;
+  
+
+
+}
+// Question 7
+if (userAnswer7 === undefined) {
+
+  noAnswers++;
+  alert(noAnswers);
+}
+else if (userAnswer7 == 1) {
+
+  rightAnswers++;
+  alert("Correct!");
+  
+}
+else {
+
+  wrongAnswers++;
+  alert("Wrong!");
+  
+
+
+}
 }
 
 
