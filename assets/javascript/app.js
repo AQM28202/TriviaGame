@@ -80,13 +80,31 @@ function tallyScore() {
   var userAnswer6 = $("input[name='answer6']:checked").val();
   var userAnswer7 = $("input[name='answer7']:checked").val();
   
-  alert(userAnswer1);
-  alert(userAnswer2);
-  alert(userAnswer3);
-  alert(userAnswer4);
-  alert(userAnswer5);
-  alert(userAnswer6);
-  alert(userAnswer7);
+
+
+   // Question 1
+   if (userAnswer1 === undefined) {
+
+    noAnswers++;
+    alert(noAnswers);
+}
+else if (userAnswer1 == 1) {
+
+    rightAnswers++;
+    alert("Correct!");
+    alert(questionList[0].answers[1]);
+    alert(rightAnswers);
+}
+else {
+
+    wrongAnswers++;
+    alert("Wrong!");
+    alert(userAnswer1);
+    alert(wrongAnswers);
+
+
+}
+
 
 
 }
@@ -117,6 +135,7 @@ function decrement() {
       // Run stop function to stop timer and tally score countdown
       stop();
       tallyScore();
+
       
   }
 }
