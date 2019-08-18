@@ -6,7 +6,7 @@
 
 
 // 
-var number = 60;
+var number = 10;
 var intervalId;
 
 $("#start-button").on("click", function () {
@@ -49,16 +49,26 @@ $("#start-button").on("click", function () {
     "<input type='radio' name='answer6' value='0'>" + "<label>" + questionList[6].answers[0] + "</label>" +
     "<input type='radio' name='answer6' value='1'>" + "<label>" + questionList[6].answers[1] + "</label>" +
     "<input type='radio' name='answer6' value='2'>" + "<label>" + questionList[6].answers[2] + "</label><hr>");
-// Targets submit-button div and displays text
+
+    // Targets submit-button div and displays text
 
     $("#submit-button").html("<button id='done' class='btn btn-outline-light'>Done</button>");
-    $("#done").on("click", function() {
-
-      tallyScore();
-    }
+   
 });
 
+// Should run tallyscore on click
+$("#done").on("click", function() {
 
+  tallyScore();
+});
+
+//  Tallies Score
+
+function tallyScore() {
+  
+  var userAnswer1 = $("input[name='answer1']:checked").val();
+  alert(userAnswer1);
+}
 function run() {
 
   clearInterval(intervalId);
@@ -81,6 +91,7 @@ function decrement() {
       // Run stop function to stop timer countdown
       stop();
       tallyScore();
+      
   }
 }
 
@@ -89,6 +100,8 @@ function stop() {
   //  Clears intervalId
   clearInterval(intervalId);
 }
+
+
 
 // Array of objects with the questions, multiple choices, and correct answers
 var questionList =
