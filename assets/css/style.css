@@ -12,6 +12,11 @@ P {
     color: #D3D3D3;
 }
 
+hr {
+    border: 1px solid #C34040ed;
+   
+}
+
 #questions-display {
     color: #D3D3D3;
     
