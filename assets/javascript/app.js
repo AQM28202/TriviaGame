@@ -8,7 +8,9 @@
     $("#start-button").on("click", function(){
         $("#splash-page").hide();
         $("#questions-display").html("<p>" + questionList[0].question + "</p>");
-        $("#answers-display").html("<input type='radio' name='answers' value='0'>" + "<label>" + questionList[0].answers[0] + "</label>");
+        $("#answers-display").html("<input type='radio' name='answer1' value='0'>" + "<label>" + questionList[0].answers[0] + "</label>" +
+                                   "<input type='radio' name='answer1' value='1'>" + "<label>" + questionList[0].answers[1] + "</label>" +
+                                   "<input type='radio' name='answer1' value='2'>" + "<label>" + questionList[0].answers[2] + "</label>");
       });
     
 
