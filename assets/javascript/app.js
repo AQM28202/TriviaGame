@@ -52,7 +52,7 @@ $("#start-button").on("click", function () {
 // Targets submit-button div and displays text
 
     $("#submit-button").html("<button id='done' class='btn btn-outline-light'>Done</button>");
-
+    $("#done").on("click", function() {}
 });
 
 
