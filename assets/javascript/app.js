@@ -18,7 +18,7 @@ $("#start-button").on("click", function () {
   $("#timer").html("<h3>Time Remaining :60</h3>" + "<br>");
   run();
 
-  
+
 
   // Displays questions and answer options
   $("#questions-display").html("<p>" + questionList[0].question + "</p>");
@@ -49,7 +49,12 @@ $("#start-button").on("click", function () {
     "<input type='radio' name='answer6' value='0'>" + "<label>" + questionList[6].answers[0] + "</label>" +
     "<input type='radio' name='answer6' value='1'>" + "<label>" + questionList[6].answers[1] + "</label>" +
     "<input type='radio' name='answer6' value='2'>" + "<label>" + questionList[6].answers[2] + "</label><hr>");
+// Targets submit-button div and displays text
+
+    $("#submit-button").html("<button id='done' class='btn'>Done</button>");
+
 });
+
 
 function run() {
 
