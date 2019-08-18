@@ -6,9 +6,10 @@
 
 
     $("#start-button").on("click", function(){
-        $("#splash-page").hide();;
+        $("#splash-page").hide();
+        $("#questions-display").html("<h3>" + questionList[0].question + "</h3>");
       });
-
+    
 
 // Array of objects with the questions, multiple choices, and correct answers
 var questionList =
