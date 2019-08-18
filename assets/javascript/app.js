@@ -6,7 +6,11 @@
 
 
 $("#start-button").on("click", function () {
+  
+  // Hides splash page
   $("#splash-page").hide();
+
+  // Displays questions and answer options
   $("#questions-display").html("<p>" + questionList[0].question + "</p>");
   $("#answers-display").html("<input type='radio' name='answer1' value='0'>" + "<label>" + questionList[0].answers[0] + "</label>" +
     "<input type='radio' name='answer1' value='1'>" + "<label>" + questionList[0].answers[1] + "</label>" +
