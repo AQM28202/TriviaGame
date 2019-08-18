@@ -57,10 +57,11 @@ $("#start-button").on("click", function () {
 });
 
 // Should run tallyscore on click
-$("#done").on("click", function() {
-
+$("#submit-button").on("click", function() {
+  stop();
   tallyScore();
 });
+
 
 //  Tallies Score
 
@@ -68,7 +69,13 @@ function tallyScore() {
   
   var userAnswer1 = $("input[name='answer1']:checked").val();
   alert(userAnswer1);
+
 }
+
+
+
+// Starts the clock
+
 function run() {
 
   clearInterval(intervalId);
@@ -88,7 +95,7 @@ function decrement() {
 
   if (number === 0) {
 
-      // Run stop function to stop timer countdown
+      // Run stop function to stop timer and tally score countdown
       stop();
       tallyScore();
       
