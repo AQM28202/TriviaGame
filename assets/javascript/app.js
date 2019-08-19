@@ -65,6 +65,7 @@ $("#start-button").on("click", function () {
 $("#submit-button").on("click", function () {
   stop();
   tallyScore();
+  displayResults();
 });
 
 
@@ -201,9 +202,8 @@ function tallyScore() {
 
     wrongAnswers++;
 
+}
 
-
-  }
 }
 
 
@@ -284,3 +284,9 @@ var questionList =
       correct: "King Darius"
     },
   ]
+  function displayResults() {
+    $("results-message").html("<h3>All Done!</h3>");
+    $("#rightAnswers").html("Riight Answers: " + rightAnswers);
+    $("#wrongAnswers").html("Wrong Answers: " + wrongtAnswers);
+    $("#noAnswers").html("Unanswered: " + noAnswers);
+  }
