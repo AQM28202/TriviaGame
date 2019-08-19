@@ -5,7 +5,7 @@
 // HTML is updated to display player's number of correct and incorrect answers 
 
 
-// 
+// Establish vars to use in timer function
 var number = 60;
 var intervalId;
 
@@ -14,6 +14,7 @@ var rightAnswers = 0;
 var wrongAnswers = 0;
 var noAnswers = 0;
 
+// wiring start button
 $("#start-button").on("click", function () {
 
   // Hides splash page
@@ -25,7 +26,7 @@ $("#start-button").on("click", function () {
 
 
 
-  // Displays questions and answer options
+  // Displays questions and answer options. I really want to build a for loop to handles this but I couldn't quite wrap my mind all the way aroud it 
   $("#questions-display").html("<p>" + questionList[0].question + "</p>");
   $("#answers-display").html("<input type='radio' name='answer1' value='0'>" + "<label>" + questionList[0].answers[0] + "</label>" +
     "<input type='radio' name='answer1' value='1'>" + "<label>" + questionList[0].answers[1] + "</label>" +
@@ -202,7 +203,7 @@ function tallyScore() {
 
     wrongAnswers++;
 
-}
+  }
 
 }
 
@@ -285,16 +286,17 @@ var questionList =
       correct: "King Darius"
     },
   ]
-  function displayResults() {
-    $("#questions-display").hide();
-    $("#answers-display").hide();
-    $("#submit-button").hide();
-    $("#timer").hide();
+  // Displays results and hides questions/timer
+function displayResults() {
+  $("#questions-display").hide();
+  $("#answers-display").hide();
+  $("#submit-button").hide();
+  $("#timer").hide();
 
-    
 
-    $("results-message").html("<h3>All Done!</h3>");
-    $("#rightAnswers").html("<h3>Right Answers: " + rightAnswers);
-    $("#wrongAnswers").html("<h3>Wrong Answers: " + wrongAnswers);
-    $("#noAnswers").html("<h3>Unanswered: " + noAnswers);
-  }
+
+  $("results-message").html("<h3>All Done!</h3>");
+  $("#rightAnswers").html("<h3>Right Answers: " + rightAnswers);
+  $("#wrongAnswers").html("<h3>Wrong Answers: " + wrongAnswers);
+  $("#noAnswers").html("<h3>Unanswered: " + noAnswers);
+}
