@@ -232,6 +232,7 @@ function decrement() {
     // Run stop function to stop timer and tally score countdown
     stop();
     tallyScore();
+    displayResults();
 
 
   }
@@ -288,6 +289,9 @@ var questionList =
     $("#questions-display").hide();
     $("#answers-display").hide();
     $("#submit-button").hide();
+    $("#timer").hide();
+
+    
 
     $("results-message").html("<h3>All Done!</h3>");
     $("#rightAnswers").html("<h3>Right Answers: " + rightAnswers);
