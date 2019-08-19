@@ -290,7 +290,7 @@ var questionList =
     $("#submit-button").hide();
 
     $("results-message").html("<h3>All Done!</h3>");
-    $("#rightAnswers").html("Riight Answers: " + rightAnswers);
-    $("#wrongAnswers").html("Wrong Answers: " + wrongtAnswers);
-    $("#noAnswers").html("Unanswered: " + noAnswers);
+    $("#rightAnswers").html("<h3>Right Answers: " + rightAnswers);
+    $("#wrongAnswers").html("<h3>Wrong Answers: " + wrongAnswers);
+    $("#noAnswers").html("<h3>Unanswered: " + noAnswers);
   }
