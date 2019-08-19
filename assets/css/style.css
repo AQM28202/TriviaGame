@@ -28,7 +28,7 @@ hr {
     color: #D3D3D3;
     
 }
-.radio {
+#radio {
     color: #D3D3D3;
 }
 button {
@@ -37,5 +37,8 @@ button {
 }
 label {
     color: rgb(197, 196, 196);
+    margin-left: 2px;
+    padding: 5px;
+
     
 }
