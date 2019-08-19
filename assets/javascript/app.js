@@ -55,14 +55,14 @@ $("#start-button").on("click", function () {
     "<input type='radio' name='answer7' value='1'>" + "<label>" + questionList[6].answers[1] + "</label>" +
     "<input type='radio' name='answer7' value='2'>" + "<label>" + questionList[6].answers[2] + "</label><hr>");
 
-    // Targets submit-button div and displays text
+  // Targets submit-button div and displays text
 
-    $("#submit-button").html("<button id='done' class='btn btn-outline-light btn-lg btn-block'>Done</button>");
-   
+  $("#submit-button").html("<button id='done' class='btn btn-outline-light btn-lg btn-block'>Done</button>");
+
 });
 
 // Should run tallyscore on click
-$("#submit-button").on("click", function() {
+$("#submit-button").on("click", function () {
   stop();
   tallyScore();
 });
@@ -71,7 +71,7 @@ $("#submit-button").on("click", function() {
 //  Tallies Score
 
 function tallyScore() {
-  
+
   var userAnswer1 = $("input[name='answer1']:checked").val();
   var userAnswer2 = $("input[name='answer2']:checked").val();
   var userAnswer3 = $("input[name='answer3']:checked").val();
@@ -79,134 +79,131 @@ function tallyScore() {
   var userAnswer5 = $("input[name='answer5']:checked").val();
   var userAnswer6 = $("input[name='answer6']:checked").val();
   var userAnswer7 = $("input[name='answer7']:checked").val();
-  
 
 
-   // Question 1
-   if (userAnswer1 === undefined) {
+
+  // Question 1
+  if (userAnswer1 === undefined) {
 
     noAnswers++;
-    
-}
-else if (userAnswer1 == 1) {
+
+  }
+  else if (userAnswer1 == 1) {
 
     rightAnswers++;
-    
-}
-else {
+
+  }
+  else {
 
     wrongAnswers++;
-    
-
-}
-
-// Question 2
-if (userAnswer2 === undefined) {
-
-  noAnswers++;
-  
-}
-else if (userAnswer2 == 0) {
-
-  rightAnswers++;
-  
-}
-else {
-
-  wrongAnswers++;
-  
-  
 
 
-}
-// Question 3
-if (userAnswer3 === undefined) {
+  }
 
-  noAnswers++;
-}
-else if (userAnswer3 == 2) {
+  // Question 2
+  if (userAnswer2 === undefined) {
 
-  rightAnswers++;
-  
-}
-else {
+    noAnswers++;
 
-  wrongAnswers++;
-  
+  }
+  else if (userAnswer2 == 0) {
 
+    rightAnswers++;
 
-}
-// Question 4
-if (userAnswer4 === undefined) {
+  }
+  else {
 
-  noAnswers++;
-}
-else if (userAnswer4 == 1) {
-
-  rightAnswers++;
-  
-}
-else {
-
-  wrongAnswers++;
-  
+    wrongAnswers++;
 
 
-}
-// Question 5
-if (userAnswer5 === undefined) {
-
-  noAnswers++;
-}
-else if (userAnswer5 == 2) {
-
-  rightAnswers++;
-  
-}
-else {
-
-  wrongAnswers++;
-  
 
 
-}
-// Question 6
-if (userAnswer6 === undefined) {
+  }
+  // Question 3
+  if (userAnswer3 === undefined) {
 
-  noAnswers++;
-}
-else if (userAnswer6 == 0) {
+    noAnswers++;
+  }
+  else if (userAnswer3 == 2) {
 
-  rightAnswers++;
-  
-}
-else {
+    rightAnswers++;
 
-  wrongAnswers++;
-  
+  }
+  else {
 
-
-}
-// Question 7
-if (userAnswer7 === undefined) {
-
-  noAnswers++;
-  alert(noAnswers);
-}
-else if (userAnswer7 == 1) {
-
-  rightAnswers++;
-  alert("Correct!");
-  
-}
-else {
-
-  wrongAnswers++;
-  alert("Wrong!");
-  
+    wrongAnswers++;
 
 
-}
+
+  }
+  // Question 4
+  if (userAnswer4 === undefined) {
+
+    noAnswers++;
+  }
+  else if (userAnswer4 == 1) {
+
+    rightAnswers++;
+
+  }
+  else {
+
+    wrongAnswers++;
+
+
+
+  }
+  // Question 5
+  if (userAnswer5 === undefined) {
+
+    noAnswers++;
+  }
+  else if (userAnswer5 == 2) {
+
+    rightAnswers++;
+
+  }
+  else {
+
+    wrongAnswers++;
+
+
+
+  }
+  // Question 6
+  if (userAnswer6 === undefined) {
+
+    noAnswers++;
+  }
+  else if (userAnswer6 == 0) {
+
+    rightAnswers++;
+
+  }
+  else {
+
+    wrongAnswers++;
+
+
+
+  }
+  // Question 7
+  if (userAnswer7 === undefined) {
+
+    noAnswers++;
+  }
+  else if (userAnswer7 == 1) {
+
+    rightAnswers++;
+
+  }
+  else {
+
+    wrongAnswers++;
+
+
+
+  }
 }
 
 
@@ -228,15 +225,15 @@ function decrement() {
   //  Show the number in the #time tag
   $("#timer").html("<h3>Time Remaining :" + number + "</h3>" + "<br>");
 
-  
+
 
   if (number === 0) {
 
-      // Run stop function to stop timer and tally score countdown
-      stop();
-      tallyScore();
+    // Run stop function to stop timer and tally score countdown
+    stop();
+    tallyScore();
 
-      
+
   }
 }
 
