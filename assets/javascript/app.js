@@ -285,6 +285,10 @@ var questionList =
     },
   ]
   function displayResults() {
+    $("#questions-display").hide();
+    $("#answers-display").hide();
+    $("#submit-button").hide();
+
     $("results-message").html("<h3>All Done!</h3>");
     $("#rightAnswers").html("Riight Answers: " + rightAnswers);
     $("#wrongAnswers").html("Wrong Answers: " + wrongtAnswers);
